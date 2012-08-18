@@ -12,5 +12,5 @@ Gem::Specification.new do |s|
 
   s.version       = "0.0.1"
   
-  s.add_dependency "devise", "~> 1.3"
+  s.add_dependency "devise", "~> 2.1"
 end
