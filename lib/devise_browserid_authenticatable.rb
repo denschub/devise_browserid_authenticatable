@@ -7,8 +7,7 @@ class Devise::Strategies::BrowseridAuthenticatable < Devise::Strategies::Authent
       return false
     end
 
-    # TODO use dev.diresworb.org in development
-    http = Net::HTTP.new("browserid.org", 443)
+    http = Net::HTTP.new(self.browserid_url, 443)
     http.use_ssl = true
 
     verification_request = Net::HTTP::Post.new("/verify")
@@ -31,6 +30,14 @@ class Devise::Strategies::BrowseridAuthenticatable < Devise::Strategies::Authent
     end
 
     success!(u)
+  end
+
+  def browserid_url
+    if Rails.env.production?
+      "browserid.org"
+    else
+      "dev.diresworb.org"
+    end
   end
 end
 
