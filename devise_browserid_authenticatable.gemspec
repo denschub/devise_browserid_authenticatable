@@ -1,7 +1,7 @@
 Gem::Specification.new do |s|
   s.name         = "devise_browserid_authenticatable"
-  s.summary      = "BrowserID/Persona authentication for Devise"
-  s.description  = "Mozilla BrowserID/Persona authentication module for Devise"
+  s.summary      = "BrowserID/Persona authentication for Devise 2+"
+  s.description  = "Mozilla BrowserID/Persona authentication module that works with Rails 3.1+ and Devise 2.1+"
 
   s.authors      = ["Dennis Schubert"]
   s.email        = "gems@schub.io"
