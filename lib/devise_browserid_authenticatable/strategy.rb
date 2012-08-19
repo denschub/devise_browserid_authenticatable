@@ -7,7 +7,7 @@ class Devise::Strategies::BrowseridAuthenticatable < Devise::Strategies::Authent
       return false
     end
 
-    http = Net::HTTP.new(self.browserid_url, 443)
+    http = Net::HTTP.new(Devise::Strategies::BrowseridAuthenticatable.browserid_url, 443)
     http.use_ssl = true
 
     verification_request = Net::HTTP::Post.new("/verify")
@@ -32,7 +32,7 @@ class Devise::Strategies::BrowseridAuthenticatable < Devise::Strategies::Authent
     success!(u)
   end
 
-  def browserid_url
+  def self.browserid_url
     if Rails.env.production?
       "browserid.org"
     else
