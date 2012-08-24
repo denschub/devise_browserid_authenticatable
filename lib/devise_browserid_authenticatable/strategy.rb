@@ -24,7 +24,7 @@ class Devise::Strategies::BrowseridAuthenticatable < Devise::Strategies::Authent
 
     unless u
       password = Devise.friendly_token
-      u = mapping.to.create(:email => @asserted["email"], :password => password, :password_confirmation => password)
+      u = mapping.to.new(:email => @asserted["email"], :password => password, :password_confirmation => password)
       u.skip_confirmation!
       u.save!
     end
