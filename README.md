@@ -57,7 +57,7 @@ like this (you will find an explanation below the code):
             url: '/users/sign_in',
             type: "POST",
             dataType: "json",
-                    cache: false,
+            cache: false,
             data: {
               "assertion": assertion
             },
