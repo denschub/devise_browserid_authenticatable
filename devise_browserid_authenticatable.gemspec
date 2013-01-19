@@ -10,7 +10,7 @@ Gem::Specification.new do |s|
   s.files         = `git ls-files`.split("\n")
   s.require_paths = ["lib"]
 
-  s.version       = "1.2.0-pre"
+  s.version       = "1.2.0"
   
   s.add_dependency "devise", "~> 2.1"
 end

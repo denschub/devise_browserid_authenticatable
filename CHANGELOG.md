@@ -1,4 +1,4 @@
-# 1.2.0-pre
+# 1.2.0
 
 * Fixed an indentation typo in the readme - thanks to @pjambet
 * ```browserid_js_tag``` can now take params - thanks to @sunny
