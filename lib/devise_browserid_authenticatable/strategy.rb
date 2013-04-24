@@ -33,11 +33,7 @@ class Devise::Strategies::BrowseridAuthenticatable < Devise::Strategies::Authent
   end
 
   def self.browserid_url
-    if Rails.env.production?
-      "login.persona.org"
-    else
-      "login.dev.anosrep.org"
-    end
+    "login.persona.org"
   end
 end
 
