@@ -12,5 +12,7 @@ Gem::Specification.new do |s|
 
   s.version       = "1.2.0"
   
-  s.add_dependency "devise", "3.0.0.rc"
+  s.add_dependency 'devise', '3.0.0.rc'
+  s.add_development_dependency 'minitest'
+  s.add_development_dependency 'rake'
 end
