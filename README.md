@@ -4,7 +4,7 @@ devise_browserid_authenticatable
 Written by Dennis Schubert
 
 devise_browserid_authenticatable is a module to add [BrowserID/Persona](https://persona.org)
-authentication support tp [Devise](http://github.com/plataformatec/devise) applications.
+authentication support to [Devise](http://github.com/plataformatec/devise) applications.
 
 The warden strategy was written for use in Rails 3.1 and Devise 2 application, but they should
 work in other configurations, too.
