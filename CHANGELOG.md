@@ -1,3 +1,9 @@
+# 1.3.0
+
+* Fixed a typo in the README.me - thanks @narr
+* move browserid_url to initializer - thanks @ccarruitero
+* add some generators - thanks @ccarruitero
+
 # 1.2.0
 
 * Fixed an indentation typo in the readme - thanks to @pjambet
