@@ -20,6 +20,8 @@ To install the gem, just add a
 
 to your Gemfile and run ```bundle install```.
 
+Create the initializer running ```rails generate browser_id:install```.
+
 To enable the warden strategy, add the following lines to ```config/initializers/devise.rb```:
 
     config.warden do |manager|

@@ -1,3 +1,7 @@
+# 1.3.1-trunk
+
+* Add the initializer-generator to the README.
+
 # 1.3.0
 
 * Fixed a typo in the README.me - thanks @narr
