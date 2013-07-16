@@ -10,6 +10,6 @@ class InstallGeneratorTest < Rails::Generators::TestCase
   test 'create initializer' do
     run_generator
 
-    assert_file "config/initializers/browser_id.rb"
+    assert_file 'config/initializers/browser_id.rb'
   end
 end
