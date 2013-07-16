@@ -2,6 +2,7 @@
 
 * Added the initializer-generator to the README.
 * Fixed a possible syntax error in some environments...
+* Some code cleanups
 
 # 1.3.0
 
