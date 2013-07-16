@@ -10,21 +10,21 @@ class Devise::Strategies::BrowseridAuthenticatable < Devise::Strategies::Authent
     http = Net::HTTP.new(Devise::Strategies::BrowseridAuthenticatable.browserid_url, 443)
     http.use_ssl = true
 
-    verification_request = Net::HTTP::Post.new("/verify")
-    verification_request.set_form_data(assertion: params[:assertion], audience: request.host_with_port)
+    verification_request = Net::HTTP::Post.new('/verify')
+    verification_request.set_form_data({:assertion => params[:assertion], :audience => request.host_with_port})
 
     response = http.request(verification_request)
     @asserted = JSON.parse(response.body)
 
-    (@asserted["status"] == "okay") and (@asserted["audience"] == request.host_with_port)
+    (@asserted['status'] == 'okay') and (@asserted['audience'] == request.host_with_port)
   end
 
   def authenticate!
-    u = mapping.to.find_by_email(@asserted["email"])
+    u = mapping.to.find_by_email(@asserted['email'])
 
     unless u
       password = Devise.friendly_token
-      u = mapping.to.new(:email => @asserted["email"], :password => password, :password_confirmation => password)
+      u = mapping.to.new(:email => @asserted['email'], :password => password, :password_confirmation => password)
       u.skip_confirmation! if u.respond_to?(:skip_confirmation!)
       u.save!
     end

@@ -1,3 +1,9 @@
+# 1.3.1
+
+* Added the initializer-generator to the README.
+* Fixed a possible syntax error in some environments...
+* Some code cleanups
+
 # 1.3.0
 
 * Fixed a typo in the README.me - thanks @narr
