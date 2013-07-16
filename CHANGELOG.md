@@ -1,4 +1,4 @@
-# 1.3.1-trunk
+# 1.3.1
 
 * Added the initializer-generator to the README.
 * Fixed a possible syntax error in some environments...
