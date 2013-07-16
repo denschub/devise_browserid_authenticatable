@@ -1,6 +1,7 @@
 # 1.3.1-trunk
 
 * Add the initializer-generator to the README.
+* Fix a possible syntax error in some environments...
 
 # 1.3.0
 

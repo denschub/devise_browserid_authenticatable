@@ -11,7 +11,7 @@ class Devise::Strategies::BrowseridAuthenticatable < Devise::Strategies::Authent
     http.use_ssl = true
 
     verification_request = Net::HTTP::Post.new("/verify")
-    verification_request.set_form_data(assertion: params[:assertion], audience: request.host_with_port)
+    verification_request.set_form_data({:assertion => params[:assertion], :audience => request.host_with_port})
 
     response = http.request(verification_request)
     @asserted = JSON.parse(response.body)
