@@ -1,3 +1,7 @@
+# 1.3.2
+
+* Fixed the generator. Sorry folks! Thanks @scivola!
+
 # 1.3.1
 
 * Added the initializer-generator to the README.
