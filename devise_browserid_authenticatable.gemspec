@@ -9,9 +9,9 @@ Gem::Specification.new do |s|
   s.homepage     = 'https://github.com/denschub/devise_browserid_authenticatable'
 
   s.files         = `git ls-files`.split("\n")
-  s.require_paths = %w('lib')
+  s.require_paths = %w(lib)
 
-  s.version       = '1.3.1'
+  s.version       = '1.3.2'
 
   s.add_dependency 'devise', '>= 2.1'
   s.add_development_dependency 'minitest'
