@@ -13,7 +13,7 @@ Gem::Specification.new do |s|
 
   s.version       = '1.3.3-dev'
 
-  s.add_dependency 'devise', '>= 2.1'
+  s.add_dependency 'devise', '>= 3.4'
   s.add_development_dependency 'minitest'
   s.add_development_dependency 'rake'
 end
